@@ -12,6 +12,19 @@ nav ul {
   list-style-type: none;
   justify-content: space-evenly;
   gap: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.get-in-touch-button {
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
 }
 
 #home {
@@ -25,12 +38,15 @@ nav ul {
   flex: 1;
   text-align: left;
   margin-right: 20px;
+  max-width: 500px;
 }
 .intro-text h3 {
   font-size: 15px;
+  margin-bottom: 10px;
 }
 .intro-text h2 {
   font-size: 30px;
+  line-height: 1.4;
 }
 
 .intro-image {
@@ -38,7 +54,7 @@ nav ul {
   text-align: right;
 }
 .intro-image img {
-  width: 300px;
+  width: 100%;
   height: auto;
   border-radius: 8px;
 }
@@ -47,18 +63,22 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 100px;
   padding: 20px;
   width: 100%;
   box-sizing: border-box;
 }
 
 .about-me-image {
+  flex-shrink: 0;
   max-width: 300px;
+  height: auto;
 }
 .about-me-image img {
   width: 100%;
-  height: 500%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
 }
 
 .about-me-text {
@@ -68,27 +88,29 @@ nav ul {
 }
 
 .about-me-text h3 {
-  font-size: 24px;
+  font-size: 50px;
   margin-bottom: 10px;
 }
 
 .about-me-text p {
   font-size: 16px;
   line-height: 1.6;
-  margin: 0;
+  margin: 0 0 15px;
 }
 
 .technical-skills {
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .technical-skills h2 {
-  font-size: 10px;
+  font-size: 36px;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .skills-container {
@@ -109,6 +131,51 @@ nav ul {
   width: 70px;
   height: 70px;
   object-fit: contain;
+}
+
+.projects-section {
+  padding: 50px 0;
+  text-align: center;
+}
+.projects-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.projects-section .projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.projects-section .project {
+  border: 1px solid;
+  border-radius: 10px;
+  width: 280px;
+  padding: 20px;
+}
+.projects-section .project img {
+  width: 100%;
+  height: auto;
+  borer-radius: 10px;
+}
+.projects-section .project h3 {
+  font-size: 24px;
+  margin: 15px 0;
+}
+.projects-section .project p {
+  font-size: 24px;
+  margin: 15px 0;
+}
+.projects-section .project .project-button {
+  display: flex;
+  justify-content: space-between;
+}
+.projects-section .project .project-button .btn {
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=styles.css.map */
