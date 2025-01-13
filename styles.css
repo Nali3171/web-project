@@ -146,7 +146,8 @@ nav ul a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
+  padding: 20px;
 }
 .projects-section .project {
   border: 1px solid;
@@ -173,9 +174,98 @@ nav ul a {
 }
 .projects-section .project .project-button .btn {
   padding: 8px 15px;
-  text-decoration: none;
   border-radius: 5px;
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  header {
+    display: none;
+  }
+  nav ul {
+    display: none;
+  }
+  #home {
+    flex-direction: column;
+    text-align: center;
+  }
+  .intro-text {
+    margin-right: 0;
+    text-align: left;
+  }
+  .intro-image img {
+    display: none;
+  }
+  .about-me-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .about-me-image img {
+    max-width: 100%;
+  }
+  .about-me-text h3 {
+    font-size: 40px;
+    align-items: center;
+  }
+  .technical-skill {
+    padding: 10px;
+  }
+  .skills-container {
+    gap: 10px;
+  }
+  .skill img {
+    width: 50px;
+    height: 50px;
+  }
+  .projects-section {
+    padding: 20px 10px;
+  }
+  .projects-container {
+    gap: 20px;
+  }
+  .project {
+    width: 100%;
+    padding: 10px;
+  }
+  .project img {
+    border-radius: 5px;
+  }
+  .project-button {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .project-button .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  header h4 {
+    font-size: 18px;
+  }
+  .intro-text h1 {
+    font-size: 24px;
+  }
+  .intro-text h2 {
+    font-size: 24px;
+  }
+  .about-me-text h3 {
+    font-size: 28px;
+  }
+  .about-me-text p {
+    font-size: 14px;
+  }
+  .technical-skills h2 {
+    font-size: 24px;
+  }
+  .skills-container {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .projects-section h2 {
+    font-size: 24px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
