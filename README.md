@@ -1,4 +1,4 @@
 # web-project
-web project week 1
 
-// mobile version completed too
+-   [x] Semantic HTML Elements
+-   [x] use SCSS to style

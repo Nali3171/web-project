@@ -1,9 +1,13 @@
 header {
-  color: black;
+  color: rgb(0, 0, 0);
   justify-content: space-between;
   display: flex;
   align-items: center;
-  padding: 1px;
+  padding: 15px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav ul {
@@ -29,9 +33,9 @@ nav ul a {
 
 #home {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 50px 20px;
 }
 
 .intro-text {
@@ -41,12 +45,13 @@ nav ul a {
   max-width: 500px;
 }
 .intro-text h3 {
-  font-size: 15px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 .intro-text h2 {
   font-size: 30px;
   line-height: 1.4;
+  font-weight: bold;
 }
 
 .intro-image {
